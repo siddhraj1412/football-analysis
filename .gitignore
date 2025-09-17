@@ -1,2 +1,35 @@
-*__pycahce__*
+# Ignore system files
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.DS_Store
+
+# Ignore large model weights
+*.pt
+*.weights
+*.onnx
+
+# Ignore raw video/data
+*.mp4
+*.avi
+*.mkv
+*.jpg
+*.png
+
+# Keep folder structure but not actual data
+input/*
+!input/.gitkeep
+
+models/*
+!models/.gitkeep
+
+output/*
+!output/.gitkeep
+
+# Allow tracking for these (your actual progress work)
+!tracker/**
+!training/**
+!utils/**
+!stubs/**
+!development_and_analysis/**
