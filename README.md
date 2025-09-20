@@ -13,6 +13,7 @@ This project provides tools and example notebooks for analyzing football match d
 - Easily extendable structure for your own football datasets
 
 ## Project Structure
+```
 football-analysis/
 │
 ├── data/ # Put your datasets (CSV, Excel, etc.) here
@@ -20,7 +21,7 @@ football-analysis/
 ├── scripts/ # Standalone Python scripts (optional)
 ├── requirements.txt # List of dependencies
 └── README.md # This file
-
+```
 
 ## Getting Started
 
