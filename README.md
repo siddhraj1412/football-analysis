@@ -12,6 +12,9 @@ This project provides tools and example notebooks for analyzing football match d
 - Example workflows for feature engineering and reporting
 - Easily extendable structure for your own football datasets
 
+## Demo video
+https://drive.google.com/drive/u/0/folders/1Lfwz_59LQDMVjBjVxXqCRVX57Yg0dUjH
+
 ## Project Structure
 ```
 football-analysis/
@@ -37,13 +40,16 @@ football-analysis/
 ### Installation
 
 1. **Clone this repository**
+```
 git clone https://github.com/siddhraj1412/football-analysis.git
 cd football-analysis
-
-2. **Install dependencies**
+```
+3. **Install dependencies**
+```
 pip install -r requirements.txt
+```
 
-3. **Start Jupyter (if using notebooks)**
+4. **Start Jupyter (if using notebooks)**
 jupyter notebook
 
 ## Usage
