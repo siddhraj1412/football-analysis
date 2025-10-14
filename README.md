@@ -13,7 +13,7 @@ This project provides tools and example notebooks for analyzing football match d
 - Easily extendable structure for your own football datasets
 
 ## Demo video
-https://drive.google.com/drive/u/0/folders/1Lfwz_59LQDMVjBjVxXqCRVX57Yg0dUjH
+https://drive.google.com/file/d/17W-uxE83mx4KKQ6EcP5G9eyZ81LZxlfg/view?usp=sharing
 
 ## Project Structure
 ```
