@@ -74,3 +74,5 @@ Contributions are welcome! Feel free to submit pull requests, raise issues, or s
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+⭐ Star if useful :)
