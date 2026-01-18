@@ -1,78 +1,175 @@
-# Football Analysis
+# ⚽ Football Match Analysis using Computer Vision
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
+![Status](https://img.shields.io/badge/Project-Active-success)
 
-This project provides tools and example notebooks for analyzing football match data using Python and Jupyter Notebook. The goal is to make it easy to perform exploratory data analysis (EDA), visualize football statistics, and build custom workflows for football (soccer) analytics.
+## 📌 Project Overview
 
-## Features
+This project performs **automated football match analysis** using **traditional computer vision techniques**.
 
-- Fast data loading and cleaning with Pandas and NumPy
-- Exploratory Data Analysis of players, matches, and clubs
-- Visualizations of football metrics using Matplotlib and Seaborn
-- Example workflows for feature engineering and reporting
-- Easily extendable structure for your own football datasets
+It processes a **~30 second football match video** and tracks:
 
-## Demo video
-https://drive.google.com/file/d/17W-uxE83mx4KKQ6EcP5G9eyZ81LZxlfg/view?usp=sharing
+* Players from **both teams**
+* **Goalkeepers**
+* **Referee**
+* **Football (ball)**
 
-## Project Structure
+Additionally, it computes and displays **ball possession percentages** for both teams based on tracking data.
+
+⚠️ **Important:**
+This project **does NOT use AI / Machine Learning / Deep Learning**.
+All logic is implemented using **classical computer vision and tracking algorithms**.
+
+---
+
+## 🎯 Why This Project Matters (For Recruiters)
+
+* Demonstrates **strong fundamentals in Computer Vision**
+* Shows **object tracking & motion analysis**
+* Real-world **sports analytics problem**
+* Clean pipeline: **video → detection → tracking → analytics**
+* No black-box AI — logic is **transparent and explainable**
+
+This makes it ideal for:
+
+* CV Internships
+* Software Engineering roles
+* Sports Analytics roles
+* Academic & research demonstrations
+
+---
+
+## 🚀 Features
+
+✔ Tracks **both team players**
+
+✔ Detects **goalkeepers & referee**
+
+✔ Tracks the **football continuously**
+
+✔ Calculates **team-wise possession**
+
+✔ Visualizes tracking directly on video
+
+✔ Fully **offline execution** (no website, no UI)
+
+---
+
+## 🧠 How It Works
+
+1. Input: A short football video (~30 seconds)
+2. Frame-by-frame processing using OpenCV
+3. Detection based on:
+
+   * Color segmentation
+   * Motion analysis
+   * Spatial heuristics
+4. Object tracking across frames
+5. Ball proximity logic to estimate:
+
+   * Which team is in control
+   * Overall possession percentage
+6. Output: Annotated video with live analytics
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python**
+* **OpenCV**
+* **NumPy**
+* **Classical Object Tracking Algorithms**
+* **Video Processing Pipelines**
+
+> No AI • No ML • No Deep Learning
+
+---
+
+## 📂 Project Structure
+
 ```
 football-analysis/
 │
-├── data/ # Put your datasets (CSV, Excel, etc.) here
-├── notebooks/ # Jupyter Notebooks for EDA and analysis
-├── scripts/ # Standalone Python scripts (optional)
-├── requirements.txt # List of dependencies
-└── README.md # This file
+├── data/           # Input football videos
+├── outputs/        # Processed videos with tracking
+├── utils/          # Helper & tracking functions
+├── main.py         # Entry point
+└── README.md
 ```
 
-## Getting Started
+---
 
-### Prerequisites
+## ▶️ How to Run
 
-- Python 3.x
-- Jupyter Notebook
-- pandas
-- numpy
-- matplotlib
-- seaborn
+### 1️⃣ Clone the repository
 
-### Installation
-
-1. **Clone this repository**
-```
+```bash
 git clone https://github.com/siddhraj1412/football-analysis.git
 cd football-analysis
 ```
-3. **Install dependencies**
-```
+
+### 2️⃣ Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-4. **Start Jupyter (if using notebooks)**
-jupyter notebook
+### 3️⃣ Add video
 
-## Usage
+Place a football video inside the `data/` directory.
 
-1. Open a notebook in the `notebooks/` directory.
-2. Point data loading cells to the files in your `data/` folder.
-3. Execute the cells step-by-step to perform analyses and view visualizations.
-4. Use and adapt the provided examples for your own football-related projects.
+### 4️⃣ Run analysis
 
-## Example Analyses
+```bash
+python main.py
+```
 
-- Calculate leading goal-scorers per club or per season
-- Visualize age or nationality distribution of players
-- Breakdown of goals and assists by position
-- Compare team performances based on various metrics
-- Feature engineering for predictive modeling
+### 5️⃣ Output
 
-## Contributing
+* Tracked & annotated video
+* Possession statistics overlay
+  Saved inside the `outputs/` folder.
 
-Contributions are welcome! Feel free to submit pull requests, raise issues, or suggest new features.
+---
 
-## License
+## 🚫 No Web Interface
 
-This project is open source and available under the [MIT License](LICENSE).
+This project:
 
-⭐ Star if useful :)
+* ❌ Has no frontend
+* ❌ Has no website
+* ❌ Has no user input UI
+
+It is designed as a **backend / analysis-focused system**.
+
+---
+
+## 📈 Future Enhancements
+
+* Player heatmaps
+* Pass detection
+* Shot detection
+* Set-piece recognition
+* Live camera feed support
+* Optional dashboard integration
+
+---
+
+## 👨‍💻 Author
+
+**Siddhraj Anilkumar Thakor**
+Computer Vision | Sports Analytics | Python Developer
+
+🔗 GitHub: [https://github.com/siddhraj1412](https://github.com/siddhraj1412)
+
+---
+
+## ⭐ If You Like This Project
+
+* Give it a **star**
+* Fork it
+* Open issues or improvements
+* Use it in academic or demo projects
+
+---
